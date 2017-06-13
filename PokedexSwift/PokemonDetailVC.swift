@@ -22,4 +22,9 @@ class PokemonDetailVC: UIViewController {
     @IBAction func backButtonPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
 }

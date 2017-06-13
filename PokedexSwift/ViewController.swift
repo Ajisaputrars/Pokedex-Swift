@@ -121,6 +121,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return pokemon.count
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
