@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7BF15DC1EEFA81800040788 /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7BF15DB1EEFA81800040788 /* PokemonDetailVC.swift */; };
 		D7D229BA1EEF36B1004F0D28 /* PokemonHollow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7D229B81EEF36B1004F0D28 /* PokemonHollow.ttf */; };
 		D7D229BB1EEF36B1004F0D28 /* PokemonSolid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D7D229B91EEF36B1004F0D28 /* PokemonSolid.ttf */; };
 		D7D229C01EEF38F5004F0D28 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D7D229BF1EEF38F5004F0D28 /* music.mp3 */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D7BF15DB1EEFA81800040788 /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 		D7D229B81EEF36B1004F0D28 /* PokemonHollow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PokemonHollow.ttf; sourceTree = "<group>"; };
 		D7D229B91EEF36B1004F0D28 /* PokemonSolid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PokemonSolid.ttf; sourceTree = "<group>"; };
 		D7D229BF1EEF38F5004F0D28 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				D7ECA78F1EEEE504003D550C /* ViewController.swift */,
+				D7BF15DB1EEFA81800040788 /* PokemonDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				D7ECA7961EEEE504003D550C /* PokedexSwift.xcdatamodeld in Sources */,
 				D7ECA7C21EEEE976003D550C /* Pokemon.swift in Sources */,
 				D7ECA7901EEEE504003D550C /* ViewController.swift in Sources */,
+				D7BF15DC1EEFA81800040788 /* PokemonDetailVC.swift in Sources */,
 				D7ECA78E1EEEE504003D550C /* AppDelegate.swift in Sources */,
 				D7ECA7C51EEEF1FE003D550C /* PokeCell.swift in Sources */,
 			);

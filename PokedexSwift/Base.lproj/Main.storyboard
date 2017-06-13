@@ -30,7 +30,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokedex" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RnE-iM-F57">
-                                        <rect key="frame" x="114" y="18" width="92" height="34"/>
+                                        <rect key="frame" x="114.5" y="18" width="91.5" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="vkc-uj-NPF"/>
                                         </constraints>
@@ -140,11 +140,58 @@
                     <connections>
                         <outlet property="collection" destination="hIs-At-sjU" id="5gz-se-vcc"/>
                         <outlet property="searchBar" destination="pyu-Xb-YEX" id="IML-yN-FTc"/>
+                        <segue destination="AWu-V2-7ad" kind="show" identifier="PokemonDetailVC" id="wWI-WC-3nO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="31.875" y="33.802816901408448"/>
+        </scene>
+        <!--Pokemon DetailVC-->
+        <scene sceneID="vsa-C6-kur">
+            <objects>
+                <viewController id="AWu-V2-7ad" customClass="PokemonDetailVC" customModule="PokedexSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zD8-yk-vev"/>
+                        <viewControllerLayoutGuide type="bottom" id="zIj-w3-LLC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i5z-uk-C82">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aP-zC-dL8">
+                                <rect key="frame" x="16" y="274" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="dIZ-gB-nlG"/>
+                                    <constraint firstAttribute="height" constant="21" id="nml-jQ-e02"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQN-8t-5es">
+                                <rect key="frame" x="16" y="28" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="AWu-V2-7ad" eventType="touchUpInside" id="t2l-9e-jsL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3aP-zC-dL8" firstAttribute="centerX" secondItem="i5z-uk-C82" secondAttribute="centerX" id="g14-wv-OUt"/>
+                            <constraint firstItem="3aP-zC-dL8" firstAttribute="centerY" secondItem="i5z-uk-C82" secondAttribute="centerY" id="qYL-ya-Fum"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hrE-Eq-BPm"/>
+                    <connections>
+                        <outlet property="labelTest" destination="3aP-zC-dL8" id="4Qg-Zx-7nZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mj5-1Z-G0Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757.5" y="41.197183098591552"/>
         </scene>
     </scenes>
     <resources>
