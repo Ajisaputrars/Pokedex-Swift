@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 class Pokemon {
     fileprivate var _name: String!
@@ -18,6 +19,7 @@ class Pokemon {
     fileprivate var _weight: String!
     fileprivate var _attack: String!
     fileprivate var _nextEvolutionTxt: String!
+    fileprivate var _pokemonUrl: String!
     
     var name: String{
         return _name
@@ -30,6 +32,14 @@ class Pokemon {
     init(name: String, pokedexId: Int) {
         self._name = name
         self._pokedexId = pokedexId
+        
+        self._pokemonUrl = "\(URL_BASE)\(URL_POKEMON)\(self.pokedexId)"
     }
 
+    func downloadPokemonDetail(completed: DownloadComplete){
+        
+        Alamofire.request(_pokemonUrl).responseJSON { (response) in
+            print(response.result.value ?? "gak bisa nih")
+        }
+    }
 }

@@ -31,9 +31,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         parsePokemonCSV()
         
         initAudio()
-        
-        //dissapearTheKeyboard()
-        
     }
     
     func dissapearTheKeyboard(){

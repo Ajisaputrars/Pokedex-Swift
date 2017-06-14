@@ -26,6 +26,7 @@
 		D7ECA7C21EEEE976003D550C /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ECA7C11EEEE976003D550C /* Pokemon.swift */; };
 		D7ECA7C51EEEF1FE003D550C /* PokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ECA7C41EEEF1FE003D550C /* PokeCell.swift */; };
 		D7ECA7C71EEF0A4C003D550C /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ECA7C61EEF0A4C003D550C /* csv.swift */; };
+		D7FF65D71EF1012C0091178C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FF65D61EF1012C0091178C /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		D7ECA7C11EEEE976003D550C /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		D7ECA7C41EEEF1FE003D550C /* PokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeCell.swift; sourceTree = "<group>"; };
 		D7ECA7C61EEF0A4C003D550C /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		D7FF65D61EF1012C0091178C /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				D7ECA7C61EEF0A4C003D550C /* csv.swift */,
+				D7FF65D61EF1012C0091178C /* Constant.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -422,6 +425,7 @@
 				D7ECA7C71EEF0A4C003D550C /* csv.swift in Sources */,
 				D7ECA7961EEEE504003D550C /* PokedexSwift.xcdatamodeld in Sources */,
 				D7ECA7C21EEEE976003D550C /* Pokemon.swift in Sources */,
+				D7FF65D71EF1012C0091178C /* Constant.swift in Sources */,
 				D7ECA7901EEEE504003D550C /* ViewController.swift in Sources */,
 				D7BF15DC1EEFA81800040788 /* PokemonDetailVC.swift in Sources */,
 				D7ECA78E1EEEE504003D550C /* AppDelegate.swift in Sources */,
