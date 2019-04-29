@@ -118,10 +118,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return pokemon.count
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-    
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
@@ -137,8 +133,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         }
         
         performSegue(withIdentifier: "PokemonDetailVC", sender: poke)
-        
-        
     }
 
     
@@ -150,7 +144,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 }
             }
         }
-        
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -169,8 +162,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         if searchBar.text == "" || searchBar.text == nil {
             inSearchMode = false
             collection.reloadData()
-        }
-        else {
+        } else {
             inSearchMode = true
             
             let lower = searchBar.text!.lowercased()
@@ -183,5 +175,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func dismissKeyboard() {
         view.endEditing(true)
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 }
