@@ -9,7 +9,7 @@ This app has several features:
 3. Display the detail about a specific Pokémon.
 
 <p align="center">
-  <img src="https://github.com/Ajisaputrars/TRY-Pokedex-Swift/blob/master/screenshot.png" width="350" align="center">
+  <img src="https://github.com/Ajisaputrars/TRY-Pokedex-Swift/blob/master/screenshot.png" width="450" align="center">
 </p>
 
 
