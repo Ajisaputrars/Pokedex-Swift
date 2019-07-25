@@ -1,6 +1,6 @@
 # **TRY-Pokedex-Swift**
 
-This is a simple app that demonstrate how to data from third-party service. In this app, we use The RESTful Pokémon API PokeAPI.co. 
+This is a simple app that demonstrate how to fetch data from third-party service. In this app, we use The RESTful Pokémon API PokeAPI.co. 
 
 ### **Features**
 This app has several features:
